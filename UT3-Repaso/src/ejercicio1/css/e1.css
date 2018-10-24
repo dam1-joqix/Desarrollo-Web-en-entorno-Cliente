@@ -1,0 +1,29 @@
+#contenedorPrincipal h1{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+
+#contenedorPrincipal th,tr{
+    text-align: center;
+    width: 200px;
+}
+
+#contenedorPrincipal tr,td{
+    border: 1px solid black;
+}
+
+#contenedorPrincipal td:nth-child(1){
+    font-weight: bold;
+    background-color: #defaff;
+}
+
+#contenedorPrincipal th{
+    background-color: #defaff;
+}
+
+#manejadores{
+    margin-top: 30px;
+}

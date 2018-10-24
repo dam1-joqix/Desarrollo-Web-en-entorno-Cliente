@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+  <script>
+    var nombre=prompt("Introduce tu nombre");
+    var edad=prompt("Introduce tu edad");
+  </script>
+  <h1>Ficha personal del alumno</h1>
+  <table>
+    <tr>
+      <th colspan="2"><h2><script>document.write(nombre)</script></h2></th>
+    </tr>
+    <tr>
+      <td>Nombre: <script>document.write(nombre)</script></td>
+      <td rowspan="2"><img src="http://boneshot.unaux.com/img/portfolio/fullsize/5.jpg" alt="no imagen" title="Logo de BoneShot"></td>
+    </tr>
+    <tr>
+      <td>Edad: <script>document.write(edad)</script></td>
+    </tr>
+  </table>
+
+</body>
+</html>

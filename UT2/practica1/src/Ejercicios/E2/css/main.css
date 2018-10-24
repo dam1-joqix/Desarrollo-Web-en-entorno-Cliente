@@ -1,0 +1,13 @@
+body{
+  text-align: center;
+  align-content: center;
+
+}
+table{
+  display: inline-block;
+  alignment: center;
+  border: 1px black inset;
+}
+img{
+  width: 300px;
+}

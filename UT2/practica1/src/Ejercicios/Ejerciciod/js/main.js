@@ -1,0 +1,23 @@
+//let cadena=prompt("Introduce una casena");
+//document.write("<h2>Datos de la cadena introducida</h2><ul>");
+//document.write("<li>Cadena: "+cadena+"</li>");
+//document.write("<li>Número de cáracteres: "+cadena+"</li>");
+//document.write("<li>Longitud: "+cadena.length+"</li>");
+//var vocales;
+//vocales=cadena.match(/[aeiou]/gi).length;
+
+//document.write("<li>Número de vocales: "+vocales+"</li>");
+//document.write("<li>Empieza por A: "+cadena.startsWith("A")+"</li>");
+//document.write("</ul>");
+let a=1;
+let b=5;
+console.log(a++);
+console.log(++a);
+console.log(++a + ++b);
+console.log(a-- + --b);
+a="12";
+b="13";
+let c=true;
+console.log(a+b);
+console.log(+a + +b);
+console.log(+b + +c);

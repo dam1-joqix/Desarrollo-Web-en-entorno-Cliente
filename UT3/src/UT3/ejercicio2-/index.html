@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+  <script src="js/main.js"></script>
+  <style>
+    #notas{
+      border: solid 1px red;
+    }
+    .nota{
+      background-color: lightyellow;
+    }
+    .incompleto{
+      background-color: red;
+    }
+  </style>
+</head>
+<body >
+  <h1>Editor de notas</h1>
+    <table >
+      <tr>
+        <th>
+          Nota:
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <textarea name="texto" id="texto" cols="50" rows="10" placeholder="Introduce aquí tu nota"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="enviar" name="Guardar">Guardar</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="notas">
+            <h3>Notas guardadas:</h3>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+
+</body>
+</html>

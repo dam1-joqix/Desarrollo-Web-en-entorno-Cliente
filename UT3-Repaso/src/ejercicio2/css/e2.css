@@ -1,0 +1,38 @@
+#contenedor h1{
+    font-family: 'Zeyada', cursive;
+    font-size:50px;
+}
+
+#caja {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+
+.hueco {
+    height: 110px;
+    width: 110px;
+    margin: 10px;
+    border: solid 5px black;
+    background-color: white;
+    display: inline-block;
+}
+
+.hovered {
+    border: dotted 5px black;
+}
+
+
+
+#contenedor {
+    margin: auto;
+    top: 100px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+}
