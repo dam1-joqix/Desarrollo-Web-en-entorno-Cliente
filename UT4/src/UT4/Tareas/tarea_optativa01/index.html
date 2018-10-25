@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea Optativa 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+    <script src="js/tareaOptativa.js"></script>
+    <link rel="stylesheet" href="css/e4.css">
+</head>
+<body>
+
+    <div id="contenedorPrincipal" class="container">
+        <h1>Cualquier dataset</h1>
+
+        <div id="manejadores" class="container">
+            <div class="row">
+                <select id="selectorDataset" class="col-sm">
+                    <option value="Restaurante">Restaurantes</option>
+                    <option value="Monumento">Monumentos</option>
+                    <option value="ImagenSemanaSanta">Imágenes de Semana Santa</option>
+                    <option value="FuentePublica">Fuentes públicas</option>
+                </select>
+                <button id="cargarTabla" class="col-sm">Cargar Dataset</button>
+            </div>
+        </div>
+
+        <div id="tablaContenedor" class="pre-scrollable">
+            <table id="tabla">
+                <tr>
+                    <th>Campo 1</th>
+                    <th>Campo 2</th>
+                    <th>Campo 3</th>
+                    <th>Campo 4</th>
+                    <th>Campo 5</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
