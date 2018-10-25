@@ -26,27 +26,28 @@
     <session id="-1745841711">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="html" value="9" />
+          <entry key="css" value="2" />
+          <entry key="html" value="10" />
           <entry key="index" value="1" />
-          <entry key="js" value="10" />
+          <entry key="js" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="9" />
-          <entry key="JavaScript" value="10" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="10" />
+          <entry key="JavaScript" value="14" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -55,14 +56,14 @@
           <entry key="css" value="75" />
           <entry key="html" value="434" />
           <entry key="index" value="7" />
-          <entry key="js" value="7027" />
+          <entry key="js" value="7894" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="75" />
           <entry key="HTML" value="434" />
-          <entry key="JavaScript" value="7027" />
+          <entry key="JavaScript" value="7894" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -70,20 +71,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea02/js/main.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="612">
+              <caret line="36" column="21" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="36" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea02/index.html">
+        <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/css/e4.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/js/tareaOptativa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="408">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UT4/ejercicio4/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -98,6 +113,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -116,6 +134,7 @@
         <option value="$PROJECT_DIR$/src/UT4/ejercicio4/css/main.css" />
         <option value="$PROJECT_DIR$/src/UT4/ejercicio4/index.html" />
         <option value="$PROJECT_DIR$/src/UT4/Tareas/tarea02/js/main.js" />
+        <option value="$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/js/tareaOptativa.js" />
       </list>
     </option>
   </component>
@@ -130,16 +149,19 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="369" />
+    <option name="y" value="-17" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,48 +185,14 @@
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Pruebas" type="462c0819:PsiDirectoryNode" />
+              <item name="ejercicio4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Pruebas" type="462c0819:PsiDirectoryNode" />
-              <item name="p1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Pruebas" type="462c0819:PsiDirectoryNode" />
-              <item name="p1" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Pruebas" type="462c0819:PsiDirectoryNode" />
-              <item name="p3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Pruebas" type="462c0819:PsiDirectoryNode" />
-              <item name="p4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Pruebas" type="462c0819:PsiDirectoryNode" />
-              <item name="p4" type="462c0819:PsiDirectoryNode" />
+              <item name="ejercicio4" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -229,13 +217,38 @@
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
               <item name="Tareas" type="462c0819:PsiDirectoryNode" />
               <item name="tarea02" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="Tareas" type="462c0819:PsiDirectoryNode" />
+              <item name="tarea_optativa01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="Tareas" type="462c0819:PsiDirectoryNode" />
+              <item name="tarea_optativa01" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="Tareas" type="462c0819:PsiDirectoryNode" />
+              <item name="tarea_optativa01" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,17 +294,17 @@
       <workItem from="1540234327831" duration="690000" />
       <workItem from="1540301189426" duration="5655000" />
       <workItem from="1540405435495" duration="2231000" />
+      <workItem from="1540475841881" duration="2331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21422000" />
+    <option name="totallyTimeSpent" value="24057000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23851204" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24093817" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -303,13 +316,13 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.20895523" />
+      <window_info anchor="right" id="Database" order="3" weight="0.20787746" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,24 +389,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UT4/ejercicio4/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UT4/ejercicio4/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UT4/ejercicio4/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -408,6 +407,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/ejercicio4/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="21" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/css/e4.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/ejercicio4/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/js/tareaOptativa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
