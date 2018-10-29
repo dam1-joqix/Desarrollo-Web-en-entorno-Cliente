@@ -58,5 +58,5 @@ function cargar(){
   peticion.addEventListener("readystatechange",procesarPeticion);
   peticion.open("GET","http://opendata.caceres.es/GetData/GetData?dataset=om:Restaurante&format=json");
   peticion.send();
-};
+}
 
