@@ -1,9 +1,19 @@
 'use strict';
-let url="https://jsonplaceholder.typicode.com/posts";
-let peticion=new XMLHttpRequest();
-peticion.addEventListener("readystatechange",cargarElementos);
-peticion.open("GET",url);
-peticion.send();
+document.addEventListener("DOMContentLoaded",main);
+function main(){
+  let url="https://jsonplaceholder.typicode.com/posts";
+  let peticion=new XMLHttpRequest();
+  peticion.addEventListener("readystatechange",cargarElementos);
+  peticion.open("GET",url);
+  peticion.send();
+}
+
+/**
+ * Crea una estructura html que muestra los comentarios incluidos en un JSON
+ * Crea dos botones que alternan la visibilidad de los comentarios y usuario
+ * de cada post
+ * @param event
+ */
 function cargarElementos(event) {
   let contenedor=document.querySelector("#contenedorEntradas");
   if(this.readyState==4&&this.status==200){
@@ -31,12 +41,10 @@ function cargarElementos(event) {
       let mostrarUsuarios=document.createElement("button");
       mostrarUsuarios.classList.add("mostrarUsuarios");
       mostrarUsuarios.appendChild(document.createTextNode("Usuario del post"));
-
       div2.appendChild(mostrarUsuarios);
       let mostrarComentarios=document.createElement("button");
       mostrarComentarios.classList.add("mostrarComentarios");
       mostrarComentarios.appendChild(document.createTextNode("Mostrar comentarios"));
-
       div2.appendChild(mostrarComentarios);
       let div3=document.createElement("div");
       div3.classList.add("d-none");
@@ -63,6 +71,13 @@ function cargarElementos(event) {
     }
   }
 }
+
+/**
+ * Muestra u oculta el usuario de un post,
+ * para mostrarlo consulta la url dada
+ * @param url url que consultar
+ * @param div div a mostrar u ocultar
+ */
 function mostrarUsuario(url,div) {
   let lista=div.classList;
   let esta=false;
@@ -72,7 +87,6 @@ function mostrarUsuario(url,div) {
     }
   }
   if(esta){
-    div.classList.remove("d-none");
     let peticion=new XMLHttpRequest();
     peticion.open("GET",url);
     peticion.send();
@@ -80,12 +94,19 @@ function mostrarUsuario(url,div) {
       if(this.readyState==4&&this.status==200){
         let usuario=JSON.parse(this.responseText);
         div.innerHTML="<p><strong>NOMBRE USUARIO: </strong> "+usuario.name+"</p>";
+        div.classList.remove("d-none");
       }
     }
   }else{
     div.classList.add("d-none")
   }
 }
+/**
+ * Muestra u oculta los comentarios de un post,
+ * para mostrarlos consulta la url dada
+ * @param url url que consultar
+ * @param div div a mostrar u ocultar
+ */
 function mostrarComentario(url,div) {
   let lista=div.classList;
   let esta=false;
@@ -95,7 +116,7 @@ function mostrarComentario(url,div) {
     }
   }
   if(esta){
-    div.classList.remove("d-none");
+
     let peticion=new XMLHttpRequest();
     peticion.open("GET",url);
     peticion.send();
@@ -109,8 +130,10 @@ function mostrarComentario(url,div) {
           p.appendChild(texto);
           div.appendChild(p);
         }
+        //al hacerlo visible al final no se nota el tiempo de carga
+        div.classList.remove("d-none");
       }
-      }
+    }
   }else{
     div.classList.add("d-none")
   }
