@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa_02/index.html" line="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="47a2dd25-4a90-4bd6-88cb-c92a11445fef" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,46 +29,47 @@
     <session id="-1745841711">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
-          <entry key="html" value="22" />
+          <entry key="html" value="23" />
           <entry key="index" value="1" />
-          <entry key="js" value="26" />
+          <entry key="js" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="22" />
-          <entry key="JavaScript" value="26" />
+          <entry key="HTML" value="23" />
+          <entry key="JavaScript" value="27" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="75" />
-          <entry key="html" value="459" />
+          <entry key="html" value="1664" />
           <entry key="index" value="7" />
-          <entry key="js" value="10963" />
+          <entry key="js" value="11587" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="75" />
-          <entry key="HTML" value="459" />
-          <entry key="JavaScript" value="10963" />
+          <entry key="HTML" value="1664" />
+          <entry key="JavaScript" value="11587" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -95,16 +99,37 @@
         <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea03/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="63" />
+              <caret line="22" column="63" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea03/js/t3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa_02/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="50" column="57" lean-forward="true" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea03/js/t3.js">
+        <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa_02/js/tarea_optativa02.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="132" column="67" selection-start-line="132" selection-start-column="67" selection-end-line="132" selection-end-column="67" />
+            <state relative-caret-position="357">
+              <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -115,8 +140,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -144,6 +169,8 @@
         <option value="$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/js/tareaOptativa.js" />
         <option value="$PROJECT_DIR$/src/UT4/ejercicio4/js/main.js" />
         <option value="$PROJECT_DIR$/src/UT4/Tareas/tarea03/js/t3.js" />
+        <option value="$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa_02/index.html" />
+        <option value="$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa_02/js/tarea_optativa02.js" />
       </list>
     </option>
   </component>
@@ -158,9 +185,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="974" />
+    <option name="width" value="1048" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -210,6 +237,14 @@
               <item name="Tareas" type="462c0819:PsiDirectoryNode" />
               <item name="tarea_optativa01" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="Tareas" type="462c0819:PsiDirectoryNode" />
+              <item name="tarea_optativa_02" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -229,6 +264,11 @@
     <property name="node.js.selected.package.standard" value="C:\Users\alumno1819\PhpstormProjects\DWEC\UT4\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alumno1819\PhpstormProjects\DWEC\UT4\src\UT4\Tareas\tarea_optativa_02\img" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -262,18 +302,19 @@
       <workItem from="1540475841881" duration="2331000" />
       <workItem from="1540567112411" duration="2854000" />
       <workItem from="1540573853941" duration="438000" />
-      <workItem from="1540819592526" duration="4909000" />
+      <workItem from="1540819592526" duration="6107000" />
+      <workItem from="1540843459701" duration="5000" />
+      <workItem from="1540910904617" duration="5292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32258000" />
+    <option name="totallyTimeSpent" value="38753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.120469086" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12260128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -438,6 +479,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/js/tareaOptativa.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -448,21 +496,31 @@
     <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea03/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa01/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <caret line="22" column="63" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea03/js/t3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="132" column="67" selection-start-line="132" selection-start-column="67" selection-end-line="132" selection-end-column="67" />
+        <state relative-caret-position="306">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa_02/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="50" column="57" lean-forward="true" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa_02/js/tarea_optativa02.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
         </state>
       </provider>
     </entry>
