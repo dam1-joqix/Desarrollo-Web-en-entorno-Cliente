@@ -7,7 +7,6 @@ function main(){
   peticion.open("GET",url);
   peticion.send();
 }
-
 /**
  * Crea una estructura html que muestra los comentarios incluidos en un JSON
  * Crea dos botones que alternan la visibilidad de los comentarios y usuario
@@ -71,7 +70,6 @@ function cargarElementos(event) {
     }
   }
 }
-
 /**
  * Muestra u oculta el usuario de un post,
  * para mostrarlo consulta la url dada
@@ -80,13 +78,13 @@ function cargarElementos(event) {
  */
 function mostrarUsuario(url,div) {
   let lista=div.classList;
-  let esta=false;
+  let oculto=false;
   for (let i = 0; i <lista.length ; i++) {
     if(lista[i]=="d-none"){
-      esta=true;
+      oculto=true;
     }
   }
-  if(esta){
+  if(oculto){
     let peticion=new XMLHttpRequest();
     peticion.open("GET",url);
     peticion.send();
@@ -109,14 +107,13 @@ function mostrarUsuario(url,div) {
  */
 function mostrarComentario(url,div) {
   let lista=div.classList;
-  let esta=false;
+  let oculto=false;
   for (let i = 0; i <lista.length ; i++) {
     if(lista[i]=="d-none"){
-      esta=true;
+      oculto=true;
     }
   }
-  if(esta){
-
+  if(oculto){
     let peticion=new XMLHttpRequest();
     peticion.open("GET",url);
     peticion.send();
