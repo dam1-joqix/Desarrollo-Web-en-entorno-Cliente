@@ -1,4 +1,4 @@
-let numero=0;
+  let numero=0;
 function procesarPeticion(event){
   if(this.readyState===4&&this.status==200){
     let objetoResultado=JSON.parse(this.responseText);

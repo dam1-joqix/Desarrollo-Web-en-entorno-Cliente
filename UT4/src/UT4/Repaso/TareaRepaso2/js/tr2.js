@@ -43,8 +43,15 @@ function moverAIzquierda(event) {
     contIzquierda.appendChild(seleccionado);
   }
 }
+function elimina(event){
+  if(event.target.nodeName=="LI"){
+    event.target.remove();
+  }
+}
 contIzquierda.addEventListener("click",seleccion);
 contDerecha.addEventListener("click",seleccion);
 botonLimpiar.addEventListener("click",deseleccionar);
 botonDer.addEventListener("click",moverADerecha);
 botonIzq.addEventListener("click",moverAIzquierda);
+contDerecha.addEventListener("dblclick",elimina);
+contIzquierda.addEventListener("dblclick",elimina);
