@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/UT4/Tareas/tarea_optativa_02/index.html" line="8" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="47a2dd25-4a90-4bd6-88cb-c92a11445fef" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,47 +26,49 @@
     <session id="-1745841711">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="4" />
-          <entry key="html" value="26" />
+          <entry key="css" value="8" />
+          <entry key="html" value="31" />
           <entry key="index" value="1" />
-          <entry key="js" value="31" />
+          <entry key="js" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="4" />
-          <entry key="HTML" value="26" />
-          <entry key="JavaScript" value="31" />
+          <entry key="CSS" value="8" />
+          <entry key="HTML" value="31" />
+          <entry key="JavaScript" value="38" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="75" />
-          <entry key="html" value="1667" />
+          <entry key="css" value="276" />
+          <entry key="html" value="2176" />
           <entry key="index" value="7" />
-          <entry key="js" value="12193" />
+          <entry key="js" value="15853" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="75" />
-          <entry key="HTML" value="1667" />
-          <entry key="JavaScript" value="12193" />
+          <entry key="CSS" value="276" />
+          <entry key="HTML" value="2176" />
+          <entry key="JavaScript" value="15853" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -78,15 +77,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UT4/Repaso/TareaRepaso2/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/UT4/Promises/ejercicio2/v2/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UT4/Promises/Tarea1/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/UT4/Repaso/TareaRepaso2/js/tr2.js">
+        <entry file="file://$PROJECT_DIR$/src/UT4/Promises/Tarea1/js/t1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="814">
+              <caret line="129" column="3" lean-forward="true" selection-start-line="129" selection-start-column="3" selection-end-line="129" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -96,9 +108,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -130,6 +142,15 @@
         <option value="$PROJECT_DIR$/src/UT4/Tareas/tarea03/index.html" />
         <option value="$PROJECT_DIR$/src/UT4/Tareas/tarea03/js/t3.js" />
         <option value="$PROJECT_DIR$/src/UT4/Repaso/TareaRepaso2/js/tr2.js" />
+        <option value="$PROJECT_DIR$/src/UT4/Promises/index.html" />
+        <option value="$PROJECT_DIR$/src/UT4/Promises/ejemplo1.js" />
+        <option value="$PROJECT_DIR$/src/UT4/Promises/ejercicio2/index.html" />
+        <option value="$PROJECT_DIR$/src/UT4/Promises/ejercicio2/css/main.css" />
+        <option value="$PROJECT_DIR$/src/UT4/Promises/ejercicio2/js/main.js" />
+        <option value="$PROJECT_DIR$/src/UT4/Promises/ejercicio2/v2/js/main.js" />
+        <option value="$PROJECT_DIR$/src/UT4/Promises/ejercicio2/v2/index.html" />
+        <option value="$PROJECT_DIR$/src/UT4/Promises/ejercicio2/v2/v2.css" />
+        <option value="$PROJECT_DIR$/src/UT4/Promises/Tarea1/js/t1.js" />
       </list>
     </option>
   </component>
@@ -144,7 +165,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -155,6 +176,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,39 +200,56 @@
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Repaso" type="462c0819:PsiDirectoryNode" />
+              <item name="Promises" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Repaso" type="462c0819:PsiDirectoryNode" />
-              <item name="TareaRepaso2" type="462c0819:PsiDirectoryNode" />
+              <item name="Promises" type="462c0819:PsiDirectoryNode" />
+              <item name="ejercicio2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Repaso" type="462c0819:PsiDirectoryNode" />
-              <item name="TareaRepaso2" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="Promises" type="462c0819:PsiDirectoryNode" />
+              <item name="ejercicio2" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UT4" type="462c0819:PsiDirectoryNode" />
-              <item name="Repaso" type="462c0819:PsiDirectoryNode" />
-              <item name="TareaRepaso2" type="462c0819:PsiDirectoryNode" />
+              <item name="Promises" type="462c0819:PsiDirectoryNode" />
+              <item name="ejercicio2" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="Promises" type="462c0819:PsiDirectoryNode" />
+              <item name="Tarea1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UT4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="UT4" type="462c0819:PsiDirectoryNode" />
+              <item name="Promises" type="462c0819:PsiDirectoryNode" />
+              <item name="Tarea1" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,17 +311,20 @@
       <workItem from="1541014261309" duration="139000" />
       <workItem from="1541428253222" duration="4370000" />
       <workItem from="1541514995309" duration="52000" />
+      <workItem from="1541688127428" duration="2005000" />
+      <workItem from="1541780920414" duration="2251000" />
+      <workItem from="1542032973008" duration="6401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43590000" />
+    <option name="totallyTimeSpent" value="54247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26367614" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28118163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -499,6 +541,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/ejemplo1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/ejercicio2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/ejercicio2/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/ejercicio2/v2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="e#508#514#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/ejercicio2/v2/v2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/ejercicio2/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/ejercicio2/v2/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/Tarea1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UT4/Promises/Tarea1/js/t1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="129" column="3" lean-forward="true" selection-start-line="129" selection-start-column="3" selection-end-line="129" selection-end-column="3" />
         </state>
       </provider>
     </entry>

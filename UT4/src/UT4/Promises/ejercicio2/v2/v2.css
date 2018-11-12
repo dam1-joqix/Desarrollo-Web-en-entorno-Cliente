@@ -1,0 +1,19 @@
+h2{
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+
+table,div{
+  overflow: auto;
+}
+td,th{
+  width: 33.3%;
+}
+button{
+  display: block;
+  margin: auto;
+}
+body{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
