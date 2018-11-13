@@ -50,7 +50,7 @@ class Museo {
   getDivInfo(){
     let div=document.createElement("DIV");
 
-    div.classList.add("col-sm-10","col-md-10","col-xs-12","text-center", "border","mx-auto");
+    div.classList.add("col-sm-10","col-md-10","col-xs-12","text-center", "border","mx-auto","mt-2");
     let div2=document.createElement("DIV");
     div2.classList.add("row","text-center","bg-secondary");
     let nombre=document.createElement("H2");
