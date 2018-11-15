@@ -1,22 +1,12 @@
 'use strict';
 
+
+
+
 let peticionAjax = new XMLHttpRequest();
 peticionAjax.addEventListener("readystatechange", procesarPeticion);
 peticionAjax.open("GET","https://jsonplaceholder.typicode.com/posts");
 peticionAjax.send();
-
-document.addEventListener("DOMContentLoaded",procesar);
-function procesar() {
-  fetch("https://jsonplaceholder.typicode.com/posts").
-  then(response=>response.josn()).
-    then(obtenerPosts).then(mostrarPosts).catch(error => console.error('Error:', error));
-}
-function obtenerPosts(json) {
-  //TODO
-}
-function mostrarPosts(posts){
-  //TODO
-}
 
 function procesarPeticion(event){
     if(this.readyState == 4 && this.status == 200){ //Consultamos que la respuesta es correcta
@@ -119,13 +109,4 @@ function cargarComentarios(idPost,div){
     });
     peticion.open("GET","https://jsonplaceholder.typicode.com/posts/"+idPost+"/comments\n");
     peticion.send();
-}
-/*******************************************************************/
-class Post{
-  constructor(titulo,contenido,usuario,comentarios){
-    this.titulo=titulo;
-    this.contenido=contenido;
-    this.usuario=usuario;
-    this.comentarios=comentarios;
-  }
 }
