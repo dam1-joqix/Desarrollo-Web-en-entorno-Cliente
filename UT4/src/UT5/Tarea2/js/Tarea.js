@@ -23,7 +23,7 @@ class Tarea{
         fondo="bg-success";
         break;
     }
-    div.classList.add("col-sm-4","col-xs-8","col-md-4","mt-1","tarea");
+    div.classList.add("col-sm-6","col-xs-12","col-md-6","mt-1","tarea");
     div.innerHTML=`<h4 class="bg-info text-center">${this.titulo}</h4>
       <p>${this.descripcion}</p>
       <div class="bg-secondary bt-1">
