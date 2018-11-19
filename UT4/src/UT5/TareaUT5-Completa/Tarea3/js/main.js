@@ -26,10 +26,15 @@ function guardarTarea(event) {
     body: JSON.stringify(tarea)
   }).then((res)=>res.json())
     .then(function (json) {
-      document.querySelector("#contenedorAlerta").innerHTML=`<div class="alert alert-success alert-dismissible fade show" role="alert">
+      if(json.errors){
+        document.querySelector("#contenedorAlerta").innerHTML=`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error:</strong> ${json.errors.message}</div>`;
+      }else {
+        document.querySelector("#contenedorAlerta").innerHTML = `<div class="alert alert-success alert-dismissible fade show" role="alert">
   <strong>Tarea enviada</strong>
   
 </div>`;
+      }
     }).catch(function (error) {
       console.error(error);
     document.querySelector("#contenedorAlerta").innerHTML=`<div class="alert alert-danger alert-dismissible fade show" role="alert">
