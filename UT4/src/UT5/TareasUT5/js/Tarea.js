@@ -6,6 +6,7 @@ class Tarea{
     this.estado=json.estado[0];
     this.fecha=json.fecha_creacion;
     this.id=json._id;
+
   }
   toString(){
     return `${this.titulo} ${this.descripcion} ${this.estado} ${this.fecha}`;
@@ -37,15 +38,39 @@ class Tarea{
   }
 
   obtenerDivModificar(){
+
     let fecha_=this.fecha.split("T")[0];
     let hora_=this.fecha.split("T")[1];
     hora_=hora_.split(".")[0];
     let div=document.createElement("DIV");
+    let fondo="bg-info";
+    switch (this.estado) {
+      case 'pendiente':
+        fondo="bg-danger";
+        break;
+      case 'haciendo':
+        fondo="bg-warning";
+        break;
+      case 'completada':
+        fondo="bg-success";
+        break;
+    }
+    div.classList.add("col-sm-12","col-xs-12","col-md-6","mt-1","border");
+    let inner=`
+        <table class="cien">
+        <tr>
+          <td>Título</td><td><input type="text" value="${this.titulo}" class="form-control titulo"></td>
+        </tr>
+        <tr>
+        <td>Descripción</td><td><textarea class="form-control descripcion" >${this.descripcion}</textarea></td>
+</tr>
+<tr>
+<td>Estado</td>
+<td>
 
-    div.classList.add("col-sm-3","col-xs-12","col-md-3","mt-1","tarea");
-    let inner=`<input type="text" value="${this.titulo}" class="form-control titulo">
-      <textarea class="form-control descripcion" >${this.descripcion}</textarea>
-      <select class="form-control estado">
+
+      
+      <select class="form-control estado ${fondo}">
       `;
     console.log(this.estado);
       if(this.estado==="pendiente"){
@@ -64,9 +89,18 @@ class Tarea{
         inner+="<option value='haciendo' class='bg-warning'>Haciendo</option>";
       }
       inner+=`</select>
+</td>
+</tr>
+<tr><td>
         <input type="date" value="${fecha_}" class="form-control fecha">
+        </td><td>
         <input type="time" value="${hora_}" class="form-control hora">
-      <button class="enviar form-control bg-aqua">Enviar</button>`;
+        </td></tr>
+        <tr>
+        <td colspan="2">
+      <button class="enviar form-control bg-aqua">Enviar</button>
+      </td>
+</table>`;
     div.innerHTML=inner;
     let boton=div.querySelector(".enviar");
     let titulo=div.querySelector(".titulo");
@@ -74,27 +108,48 @@ class Tarea{
     let estado=div.querySelector(".estado");
     let fecha=div.querySelector(".fecha");
     let hora=div.querySelector(".hora");
-    let tarea={
-      titulo:titulo.value,
-      descripcion:descripcion.value,
-      estado:estado.value,
-      fecha_creacion:fecha.value+"T"+hora.value
-    };
+
     boton.addEventListener("click",event=> {
+      let tarea={
+        titulo:titulo.value,
+        descripcion:descripcion.value,
+        estado:estado.value,
+        fecha_creacion:fecha.value+"T"+hora.value
+      };
       fetch("http://localhost:3000/tasks/" + this.id, {
-        method: 'update',
+        method: 'put',
         headers: {
-          'Accept': 'application/json, text/plain, */*',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(tarea)
-      })
-    }).then(response=>response.json()).
-    then(json=>{
-      if(json.errors){
-        console.log("error");
+      }).then(response => response.json()).then(json => {
+        if (json.errors) {
+          console.log("error");
+          alert("ERROR");
+        }else{
+          console.log("OK");
+          alert("Tarea modificada");
+          location.reload();
+        }
+      }).catch(error => console.log(error));
+    });
+    let select=div.querySelector(".estado");
+    select.onchange=event=>{
+      let fondo;
+      switch (select.value) {
+        case 'pendiente':
+          fondo="bg-danger";
+          break;
+        case 'haciendo':
+          fondo="bg-warning";
+          break;
+        case 'completada':
+          fondo="bg-success";
+          break;
       }
-    }).catch(error=>console.log(error));
+      select.classList.remove("bg-danger","bg-warning","bg-success");
+      select.classList.add(fondo);
+    };
     return div;
   }
   obtenerDivEliminar(){
@@ -111,7 +166,7 @@ class Tarea{
         fondo="bg-success";
         break;
     }
-    div.classList.add("col-sm-3","col-xs-12","col-md-3","mt-1","tarea");
+    div.classList.add("col-sm-6","col-xs-12","col-md-3","mt-1","tarea");
     div.innerHTML=`<h4 class="bg-info text-center">${this.titulo}</h4>
       <p>${this.descripcion}</p>
       <div class="bg-secondary bt-1">
@@ -119,8 +174,25 @@ class Tarea{
           ${this.estado}
         </span>
          ${this.fecha}
-      </div>
-        <button class="bg-danger eliminar">Eliminar</button>`;
+          <button class="bg-danger eliminar form-control text-white eliminar">Eliminar</button>
+      </div>`;
+       let boton=div.querySelector(".eliminar");
+       boton.addEventListener("click",event=>{
+
+         fetch("http://localhost:3000/tasks/" + this.id, {
+           method: 'delete'
+         }).
+         then(response=>response.json()).
+         then(json=>{
+           if(json.errors){
+             console.log(json.errors.message);
+           }else{
+             console.log("Eliminado");
+             alert("Eliminado");
+             location.reload();
+           }
+         }).catch(error=>{console.log(error)});
+       });
     return div;
   }
   getTitulo() {

@@ -1,3 +1,4 @@
+'use strict';
 fetch("http://localhost:3000/tasks").
 then(result=>result.json()).
 then(function (json) {
@@ -11,7 +12,7 @@ then(function (json) {
   contenedor.innerHTML="";
   for(let tarea of tareas){
 
-    contenedor.appendChild(tarea.obtenerDivModificar());
+    contenedor.appendChild(tarea.obtenerDivEliminar());
   }
 }).
 catch(error=>{console.log(error.message);console.log(error)});
