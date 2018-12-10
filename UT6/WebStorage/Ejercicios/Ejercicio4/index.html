@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <header class="bg-dark">
+        <h1 class="text-white text-center">Ejercicio 4</h1>
+    </header>
+    <main class="container">
+        <h2 class="text-center">Acceso y edad</h2>
+        <p class="text-center bg-secondary">
+            En esta web se quedan regirtrados nombre y edad de los usuarios que acceden.
+        </p>
+        <table class="table table-borderless">
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" name="nombre" id="nombre" class="form-control"> </td>
+                <td><button id="enviar" class="form-control bg-primary text-white">Enviar</button> </td>
+            </tr>
+        </table>
+        <div id="noExiste" class="d-none">
+            <p>Esa persona no existe</p>
+            <table class="table table-borderless">
+                <tr>
+                    <td><label for="edadIn">Edad:</label></td>
+                    <td><input type="number" name="edad" id="edadIn" class="form-control"> </td>
+                    <td><button id="enviarEdad" class="form-control bg-primary text-white">Enviar</button> </td>
+                </tr>
+            </table>
+        </div>
+        <p id="edad" class="d-none">La edad de *persona* es *XX* años</p>
+        <div class="bg-secondary text-center">
+            Personas registradas
+            <button class="form-control bg-primary text-white" id="mostrar">Mostrar todos</button>
+            <table id="registrados" class="table table-dark d-none col-xs-11 col-sm-11 col-md-11" style="margin: auto">
+                <th><td>Nombre</td><td>Edad</td></th>
+            </table>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center">
+        Joaquin Alonso Perianez
+    </footer>
+    <script src="js/ej4.js"></script>
+</body>
+</html>
