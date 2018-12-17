@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <header class="bg-dark text-white text-center">
+        <h1>Administración de Productos</h1>
+    </header>
+    <main class="container">
+        <table class="table table-dark" id="productos">
+            <tr>
+                <th>
+                    Item
+                </th>
+                <th>
+                    Cantidad
+                </th>
+                <th>
+                    Precio Unidad
+                </th>
+                <th>
+                    Marca
+                </th>
+            </tr>
+            <tr>
+                <td colspan="4" class="text-center">Cargando productos...</td>
+            </tr>
+        </table>
+        <div class="card card-body bg-secondary mb-12">
+            <h2>Emplea el siguiente formulario para añadir productos</h2>
+            <form id="formulario" method="post" action="">
+                <label for="item">Nombre del producto</label>
+                <input type="text" name="item" id="item" class="form-control">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" name="cantidad" id="cantidad" class="form-control">
+                <label for="precio">Precio por unidad</label>
+                <input type="number" id="precio" name="precio" class="form-control">
+                <lable for="marca">Introduce la marca del producto</lable>
+                <input type="text" name="marca" id="marca" class="form-control">
+                <input type="submit" value="Añadir producto" class="text-white bg-primary form-control">
+            </form>
+        </div>
+    </main>
+    <script src="js/Producto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
