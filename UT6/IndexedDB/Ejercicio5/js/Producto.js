@@ -10,15 +10,15 @@ class Producto {
         tr.innerHTML=`<th>
                 ${this.item}
                 </th>
-                <tr>
+                <td>
                     ${this.cantidad}
-                </tr>
-                <tr>
+                </td>
+                <td>
                      ${this.precioUnidad} &euro;
-                </tr>
-                <tr>
+                </td>
+                <td>
                     ${this.marca}
-                </tr>`
+                </td>`;
         return tr;
     }
 }
