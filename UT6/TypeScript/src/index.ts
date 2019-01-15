@@ -1,5 +1,3 @@
-/**Ejemplo**/
-alert("Hola mundo en TypeScript");
 /**Ejercicio 1**/
 let a:string;
 let b:number;
