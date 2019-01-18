@@ -3,17 +3,31 @@
     {{titulo}}
   </div>
   <div class="card-block">
-    <div class="table-responsive" >
+    <div class="table-responsive" *ngIf="productos && productos.length">
       <table class="table table-striped">
         <thead>
         <tr>
+          <th>
+            <button [ngClass]="{'btn-danger':mostrar,'btn-primary':!mostrar}" (click)="cambiar()" >
+             {{textoBoton}}
+            </button>
+          </th>
           <th>{{cabeceras.descripcion}}</th>
           <th>{{cabeceras.precio}}</th>
           <th>{{cabeceras.disponibilidad}}</th>
         </tr>
         </thead>
         <tbody>
-          <!--Listar productos-->
+          <tr *ngFor="let producto of productos;let i=index;">
+            <td >
+              <img [src]="producto.imagenUrl" [ngStyle]="{'height.px':altoImagen,'display':mostrar?'block':'none'}"  >
+            </td>
+            <td> {{producto.descripcion}}</td>
+            <td (click)="pintarPrecio(i)" >
+              {{producto.precio}}
+            </td>
+            <td> {{producto.disponibilidad}}</td>
+          </tr>
         </tbody>
       </table>
     </div>
