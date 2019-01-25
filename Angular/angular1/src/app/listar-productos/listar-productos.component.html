@@ -4,6 +4,10 @@
   </div>
   <div class="card-block">
     <div class="table-responsive" *ngIf="productos && productos.length">
+      <div class="m-3 row" >
+        <label for="busquedaProductos" class="col-3">Búsqueda:  </label>
+        <input [(ngModel)]="filtroBusqueda" type="text" name="busquedaProductos" id="busquedaProductos" class="form-control col-9">
+      </div>
       <table class="table table-striped">
         <thead>
         <tr>
@@ -15,18 +19,11 @@
           <th>{{cabeceras.descripcion}}</th>
           <th>{{cabeceras.precio}}</th>
           <th>{{cabeceras.disponibilidad}}</th>
+          <th>{{cabeceras.puntuacion}}</th>
         </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let producto of productos;let i=index;">
-            <td >
-              <img [src]="producto.imagenUrl" [ngStyle]="{'height.px':altoImagen,'display':mostrar?'block':'none'}"  >
-            </td>
-            <td> {{producto.descripcion}}</td>
-            <td (click)="pintarPrecio(i)" >
-              {{producto.precio}}
-            </td>
-            <td> {{producto.disponibilidad}}</td>
+          <tr item-producto *ngFor="let producto of productos| filtroProducto:filtroBusqueda;" [producto]="producto" [verImagenes]="mostrar">
           </tr>
         </tbody>
       </table>

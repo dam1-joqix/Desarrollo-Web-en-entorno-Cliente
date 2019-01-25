@@ -17,8 +17,10 @@ export class ListarProductosComponent implements OnInit {
     imagen: "Ocultar",
     descripcion: "Producto",
     precio: "Precio",
-    disponibilidad: "Disponibilidad"
+    disponibilidad: "Disponibilidad",
+    puntuacion:"Puntuación"
   };
+  filtroBusqueda= '';
 
   productos:IProducto[] = [
     {
@@ -27,7 +29,7 @@ export class ListarProductosComponent implements OnInit {
       precio: 70,
       disponibilidad: new Date(),
       imagenUrl: 'assets/disco-duro.png',
-      puntuacion: 4,
+      puntuacion: 5,
     },
     {
       id: 2,
@@ -35,7 +37,7 @@ export class ListarProductosComponent implements OnInit {
       precio: 100,
       disponibilidad: new Date(),
       imagenUrl: 'assets/placa-base.jpg',
-      puntuacion: 10,
+      puntuacion: 3,
     }
   ];
   constructor() {
@@ -49,14 +51,22 @@ export class ListarProductosComponent implements OnInit {
     alert(this.productos[indice].precio);
   }
   cambiar(){
-
     this.mostrar=!this.mostrar;
     if(this.mostrar){
       this.textoBoton="Ocultar";
     }else{
       this.textoBoton="Mostrar";
     }
-
   }
+  numToStar(numero:number):string{
+    //u2605
+    const estrella='\u2605';
+    let devuelta='';
+    for (let i=0;i<numero;i++){
+      devuelta+=estrella;
+    }
+    return devuelta;
+  }
+
 
 }

@@ -1,3 +1,15 @@
-<p>
-  item-producto works!
-</p>
+
+  <td>
+    <img [src]="producto.imagenUrl"
+         *ngIf="verImagenes"
+         [title]="producto.descripcion |uppercase" >
+  </td>
+  <td>{{producto.descripcion}}</td>
+  <td (click)="pintarPrecio(i)" >
+    {{producto.precio | currency:'EUR'}}
+  </td>
+  <td> {{producto.disponibilidad |date:'dd/MM/yyyy'}}</td>
+  <td>
+    <span class="text-warning font-weight-bolder">{{producto.puntuacion | pintaEstrellas}}</span>
+  </td>
+

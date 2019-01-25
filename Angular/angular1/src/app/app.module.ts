@@ -5,14 +5,21 @@ import { AppComponent } from './app.component';
 import { ListarProductosComponent } from './listar-productos/listar-productos.component';
 import { ItemProductoComponent } from './item-producto/item-producto.component';
 
+import { FormsModule} from "@angular/forms";
+import { FiltroProductoPipe } from './pipes/filtro-producto.pipe';
+import { PintaEstrellasPipe } from './pipes/pinta-estrellas.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     ListarProductosComponent,
-    ItemProductoComponent
+    ItemProductoComponent,
+    FiltroProductoPipe,
+    PintaEstrellasPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
