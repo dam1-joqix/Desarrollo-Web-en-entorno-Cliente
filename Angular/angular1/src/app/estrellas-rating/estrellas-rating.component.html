@@ -1,0 +1,4 @@
+<span *ngFor="let star of [1,2,3,4,5]" class="text-warning " (mouseleave)="restaurarEstrellas()" >
+  <i (mouseenter)="numEstrellasAux = star" (click)="setPuntuacion()"   class="fa fa-star" *ngIf="star<=numEstrellasAux"></i>
+  <i (mouseenter)="numEstrellasAux = star" (click)="setPuntuacion()" class="far fa-star" *ngIf="star>numEstrellasAux"></i>
+</span>

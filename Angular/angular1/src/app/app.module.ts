@@ -8,6 +8,7 @@ import { ItemProductoComponent } from './item-producto/item-producto.component';
 import { FormsModule} from "@angular/forms";
 import { FiltroProductoPipe } from './pipes/filtro-producto.pipe';
 import { PintaEstrellasPipe } from './pipes/pinta-estrellas.pipe';
+import { EstrellasRatingComponent } from './estrellas-rating/estrellas-rating.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PintaEstrellasPipe } from './pipes/pinta-estrellas.pipe';
     ListarProductosComponent,
     ItemProductoComponent,
     FiltroProductoPipe,
-    PintaEstrellasPipe
+    PintaEstrellasPipe,
+    EstrellasRatingComponent
   ],
   imports: [
     BrowserModule,

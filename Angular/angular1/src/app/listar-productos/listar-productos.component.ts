@@ -58,15 +58,7 @@ export class ListarProductosComponent implements OnInit {
       this.textoBoton="Mostrar";
     }
   }
-  numToStar(numero:number):string{
-    //u2605
-    const estrella='\u2605';
-    let devuelta='';
-    for (let i=0;i<numero;i++){
-      devuelta+=estrella;
-    }
-    return devuelta;
-  }
+
 
 
 }
