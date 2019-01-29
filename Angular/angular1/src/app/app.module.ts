@@ -9,6 +9,7 @@ import { FormsModule} from "@angular/forms";
 import { FiltroProductoPipe } from './pipes/filtro-producto.pipe';
 import { PintaEstrellasPipe } from './pipes/pinta-estrellas.pipe';
 import { EstrellasRatingComponent } from './estrellas-rating/estrellas-rating.component';
+import {CargaProductoService} from "./servicios/carga-producto.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { EstrellasRatingComponent } from './estrellas-rating/estrellas-rating.co
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers:[CargaProductoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {IProducto} from "../interfaces/i-producto";
+import {CargaProductoService} from "../servicios/carga-producto.service";
 
 @Component({
   selector: 'listar-productos',
@@ -22,29 +23,13 @@ export class ListarProductosComponent implements OnInit {
   };
   filtroBusqueda= '';
 
-  productos:IProducto[] = [
-    {
-      id: 1,
-      descripcion: 'Disco Duro SSD',
-      precio: 70,
-      disponibilidad: new Date(),
-      imagenUrl: 'assets/disco-duro.png',
-      puntuacion: 5,
-    },
-    {
-      id: 2,
-      descripcion: 'Placa Base',
-      precio: 100,
-      disponibilidad: new Date(),
-      imagenUrl: 'assets/placa-base.jpg',
-      puntuacion: 3,
-    }
-  ];
-  constructor() {
+  productos:IProducto[];
+  constructor(private cargador:CargaProductoService) {
 
   }
 
   ngOnInit() {
+    this.productos=this.cargador.getProductos();
   }
 
   pintarPrecio(indice:number){
