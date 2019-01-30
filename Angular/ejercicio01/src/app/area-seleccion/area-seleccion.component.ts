@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output} from '@angular/core';
 import {ILuchador} from "../interfaces/iluchador";
 import {CargarLuchadoresService} from "../servicios/cargar-luchadores.service";
 
@@ -11,6 +11,8 @@ export class AreaSeleccionComponent implements OnInit {
 
   constructor(private cargador:CargarLuchadoresService) { }
   luchadores:ILuchador[];
+  seleccionado:string;
+
 
   ngOnInit() {
     this.luchadores=this.cargador.getLuchadores();

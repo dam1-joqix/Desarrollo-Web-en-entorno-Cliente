@@ -1,5 +1,5 @@
-<div class="luchador">
-  <img [src]="imagePath" class="col-12" >
+<div (mouseenter)="entrar()" (mouseleave)="salir()" (click)="seleccionar()" class="luchador" [ngStyle]="{'border-color':seleccionado? luchador.colorAsociado:'black'}">
+  <img [src]="imagePath" class="col-12"    >
 </div>
 
 

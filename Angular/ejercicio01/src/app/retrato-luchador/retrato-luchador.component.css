@@ -4,6 +4,11 @@
   border:0;
 }
 .luchador{
-  border:1px solid black;
-
+  border-style: inset;
+  border-width: 5px;
+  border-color: #000;
 }
+.luchador:hover{
+  border-style: outset;
+}
+
