@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AreaSeleccionComponent } from './area-seleccion/area-seleccion.component';
 import { RetratoLuchadorComponent } from './retrato-luchador/retrato-luchador.component';
+import { AtributosLuchadorComponent } from './atributos-luchador/atributos-luchador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AreaSeleccionComponent,
-    RetratoLuchadorComponent
+    RetratoLuchadorComponent,
+    AtributosLuchadorComponent
   ],
   imports: [
     BrowserModule

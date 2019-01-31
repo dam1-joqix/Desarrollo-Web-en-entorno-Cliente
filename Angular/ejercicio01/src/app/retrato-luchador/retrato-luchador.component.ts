@@ -10,34 +10,37 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class RetratoLuchadorComponent implements OnInit {
   @Input () luchador:ILuchador;
   imagePath;
+
   seleccionado=false;
   mantener=false;
-  @Output () luchadorSeleccionado=new EventEmitter<string>();
+ @Input ()indiceSeleccionado:number;
+ @Input()numLuchador:number;
+ @Output() luchadorSeleccionado=new EventEmitter<number>();
 
   constructor(private _sanitizer: DomSanitizer) { }
 
   ngOnInit() {
     this.imagePath = this._sanitizer.bypassSecurityTrustResourceUrl(this.luchador.retrato);
+
   }
+
   entrar(){
       this.seleccionado=true;
   }
   salir(){
-    if(!this.mantener){
+
       this.seleccionado=false;
-    }
+
   }
   seleccionar(){
-    this.mantener=!this.mantener;
-    if(this.mantener){
-      this.seleccionado=true;
-      this.setSeleccionado();
+    if(this.mantener&&this.numLuchador==this.indiceSeleccionado){
+      this.mantener=false;
+      this.luchadorSeleccionado.emit(-1);
     }else {
-      this.seleccionado=false;
+      this.mantener=true;
+      this.luchadorSeleccionado.emit(this.numLuchador);
     }
   }
-  setSeleccionado(){
-    this.luchadorSeleccionado.emit(this.luchador.nombre);
-  }
+
 
 }

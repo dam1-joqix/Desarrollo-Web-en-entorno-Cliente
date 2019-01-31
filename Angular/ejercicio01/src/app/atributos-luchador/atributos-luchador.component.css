@@ -1,0 +1,13 @@
+.exterior{
+  height: 2em;
+  background-color: black;
+  border:1px solid black;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+}
+.relleno{
+  height: 2em;
+  background-color: red;
+  color: white;
+}
