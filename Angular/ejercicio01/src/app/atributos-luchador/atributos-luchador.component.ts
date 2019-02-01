@@ -8,11 +8,11 @@ import {Component, Input, OnInit} from '@angular/core';
 export class AtributosLuchadorComponent implements OnInit {
   @Input() nombreAtributo:string;
   @Input () valorAtributo:number;
-  width:string;
   constructor() { }
 
   ngOnInit() {
-    this.width=this.valorAtributo+"0%";
+
   }
+
 
 }

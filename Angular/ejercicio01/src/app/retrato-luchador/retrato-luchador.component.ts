@@ -13,6 +13,7 @@ export class RetratoLuchadorComponent implements OnInit {
 
   seleccionado=false;
   mantener=false;
+
  @Input ()indiceSeleccionado:number;
  @Input()numLuchador:number;
  @Output() luchadorSeleccionado=new EventEmitter<number>();
@@ -21,6 +22,7 @@ export class RetratoLuchadorComponent implements OnInit {
 
   ngOnInit() {
     this.imagePath = this._sanitizer.bypassSecurityTrustResourceUrl(this.luchador.retrato);
+
 
   }
 
