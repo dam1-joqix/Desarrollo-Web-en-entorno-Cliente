@@ -10,9 +10,11 @@
   color: white;
   box-sizing: border-box;
   width: 100%;
+  min-width: 125px;
   border-radius: 10px;
   margin-top: 1em;
   margin-bottom: 1em;
+
 }
 .relleno{
   height: 2em;

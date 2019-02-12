@@ -35,7 +35,7 @@ export class RetratoLuchadorComponent implements OnInit {
 
   }
   seleccionar(){
-    if(this.mantener&&this.numLuchador==this.indiceSeleccionado){
+    if(this.numLuchador==this.indiceSeleccionado){
       this.mantener=false;
       this.luchadorSeleccionado.emit(-1);
     }else {

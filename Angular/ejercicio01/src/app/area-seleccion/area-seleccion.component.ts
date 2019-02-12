@@ -1,4 +1,4 @@
-import {Component, OnInit, Output} from '@angular/core';
+import {Component, HostListener, OnInit, Output} from '@angular/core';
 import {ILuchador} from "../interfaces/iluchador";
 import {CargarLuchadoresService} from "../servicios/cargar-luchadores.service";
 import {DomSanitizer} from "@angular/platform-browser";
@@ -22,4 +22,27 @@ export class AreaSeleccionComponent implements OnInit {
     return  this._sanitizer.bypassSecurityTrustResourceUrl(this.luchadores[this.indiceSeleccionado].animacion);
   }
 
+  @HostListener('window:keyup',['$event'])
+  keyEvent(event: KeyboardEvent){
+    switch (event.keyCode) {
+      case KEY_CODE.DOWN_ARROW:
+        if(this.indiceSeleccionado!=-1){
+          let nuevoIndice=this.indiceSeleccionado+2;
+          if (!(nuevoIndice>3)){
+            this.indiceSeleccionado=nuevoIndice;
+          }
+        }
+        break;
+
+    }
+
+  }
+
+
+}
+export enum KEY_CODE{
+  UP_ARROW=38,
+  DOWN_ARROW=40,
+  RIGTH_ARROW=39,
+  LEFT_ARROW=37
 }
