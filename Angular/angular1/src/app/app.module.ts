@@ -10,6 +10,8 @@ import { FiltroProductoPipe } from './pipes/filtro-producto.pipe';
 import { PintaEstrellasPipe } from './pipes/pinta-estrellas.pipe';
 import { EstrellasRatingComponent } from './estrellas-rating/estrellas-rating.component';
 import {CargaProductoService} from "./servicios/carga-producto.service";
+import {HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import {CargaProductoService} from "./servicios/carga-producto.service";
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers:[CargaProductoService],
   bootstrap: [AppComponent]

@@ -16,7 +16,11 @@ export class AreaSeleccionComponent implements OnInit {
 
 
   ngOnInit() {
-    this.luchadores=this.cargador.getLuchadores();
+    this.cargador.getLuchadores().subscribe(
+      arrayLuchadores=>this.luchadores=arrayLuchadores,
+      error => console.log(error),
+      ()=>console.log("finalizado")
+    )
   }
   getAnimacion(){
     return  this._sanitizer.bypassSecurityTrustResourceUrl(this.luchadores[this.indiceSeleccionado].animacion);

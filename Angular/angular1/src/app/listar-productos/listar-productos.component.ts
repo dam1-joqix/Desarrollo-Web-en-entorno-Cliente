@@ -29,7 +29,12 @@ export class ListarProductosComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.productos=this.cargador.getProductos();
+    this.cargador.getProductos().subscribe(
+      arrayProductos=>this.productos=arrayProductos,
+      error=>console.log(error),
+      ()=>console.log('Fin del observable')
+    );
+
   }
 
   pintarPrecio(indice:number){
