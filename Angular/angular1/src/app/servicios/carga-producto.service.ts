@@ -31,4 +31,7 @@ export class CargaProductoService {
       tap(lista=>console.log(lista))
     );
   }
+  guardarProducto(prod:IProducto):Observable<IProducto>{
+    return this.http.put<IProducto>(this.URLProductos+"/"+prod.id,prod);
+  }
 }

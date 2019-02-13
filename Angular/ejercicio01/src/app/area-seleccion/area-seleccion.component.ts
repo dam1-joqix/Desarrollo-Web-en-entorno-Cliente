@@ -37,6 +37,8 @@ export class AreaSeleccionComponent implements OnInit {
           }
         }
         break;
+      case KEY_CODE.UP_ARROW:
+        break;
 
     }
 

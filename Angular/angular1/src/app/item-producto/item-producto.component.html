@@ -10,6 +10,6 @@
   </td>
   <td> {{producto.disponibilidad |date:'dd/MM/yyyy'}}</td>
   <td>
-    <estrellas-rating [numEstrellas]="producto.puntuacion" (numEstrellasCambiadas)="producto.puntuacion=$event" ></estrellas-rating>
+    <estrellas-rating [numEstrellas]="producto.puntuacion" (numEstrellasCambiadas)="cambioEstrellas($event)" ></estrellas-rating>
   </td>
 
