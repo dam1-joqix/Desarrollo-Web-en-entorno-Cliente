@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {IProducto} from "../interfaces/i-producto";
 import {CargaProductoService} from "../servicios/carga-producto.service";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'listar-productos',
@@ -24,7 +25,7 @@ export class ListarProductosComponent implements OnInit {
   filtroBusqueda= '';
 
   productos:IProducto[];
-  constructor(private cargador:CargaProductoService) {
+  constructor(private cargador:CargaProductoService,private titleServide:Title) {
 
   }
 
@@ -34,6 +35,7 @@ export class ListarProductosComponent implements OnInit {
       error=>console.log(error),
       ()=>console.log('Fin del observable')
     );
+    this.titleServide.setTitle('Lista de productos');
 
   }
 

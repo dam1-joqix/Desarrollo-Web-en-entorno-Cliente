@@ -1,3 +1,25 @@
-<p>
-  detalles-producto works!
-</p>
+<div class="row">
+  <div class="col-12 col-md-10 col-lg-8 col-xl-6 m-auto">
+    <div class="card text-center">
+      <div class="card-header">
+        Descripción del producto
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" >{{producto?.descripcion}}</h5>
+        <p class="card-text"> {{producto?.precio | currency:'EUR'}}</p>
+        <div class="row">
+          <div class="col-12 m-auto">
+            <img *ngIf="producto" [src]="producto?.imagenUrl" style="max-width: 500px" class="w-100">
+          </div>
+        </div>
+        <div>
+          <a  href="/productos" class="btn btn-primary" >Volver</a>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        {{producto?.disponibilidad|date:'dd/MM/yyyy'}}
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -4,7 +4,7 @@
          *ngIf="verImagenes"
          [title]="producto.descripcion |uppercase" >
   </td>
-  <td>{{producto.descripcion}}</td>
+  <td [routerLink]="['/productos',producto.id]">{{producto.descripcion}}</td>
   <td (click)="pintarPrecio(i)" >
     {{producto.precio | currency:'EUR'}}
   </td>

@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, Title} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component';
 import {RouterModule} from "@angular/router";
+import {DetallesProductoGuardaService} from "./servicios/detalles-producto-guarda.service";
 
 
 @NgModule({
@@ -35,13 +36,17 @@ import {RouterModule} from "@angular/router";
       [
         {path:'bienvenida',component:BienvenidaComponent},
         {path:'productos',component:ListarProductosComponent},
-        {path:'productos/:id',component:DetallesProductoComponent},
+        {path:'productos/:id',
+          component:DetallesProductoComponent,
+        canActivate:[DetallesProductoGuardaService]},
         {path:'',redirectTo:'/bienvenida',pathMatch:'full'},
         {path: '**',redirectTo:'/bienvenida',pathMatch:'full'},
       ]
     )
   ],
-  providers:[CargaProductoService],
+  providers:[CargaProductoService,
+    Title,
+  DetallesProductoGuardaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
