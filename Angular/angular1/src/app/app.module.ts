@@ -15,6 +15,7 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component';
 import {RouterModule} from "@angular/router";
 import {DetallesProductoGuardaService} from "./servicios/detalles-producto-guarda.service";
+import { EditarDetallesProductoComponent } from './editar-detalles-producto/editar-detalles-producto.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {DetallesProductoGuardaService} from "./servicios/detalles-producto-guard
     PintaEstrellasPipe,
     EstrellasRatingComponent,
     BienvenidaComponent,
-    DetallesProductoComponent
+    DetallesProductoComponent,
+    EditarDetallesProductoComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,7 @@ import {DetallesProductoGuardaService} from "./servicios/detalles-producto-guard
         {path:'productos/:id',
           component:DetallesProductoComponent,
         canActivate:[DetallesProductoGuardaService]},
+        {path:'productos/editar/:id',component:EditarDetallesProductoComponent,canActivate:[DetallesProductoGuardaService]},
         {path:'',redirectTo:'/bienvenida',pathMatch:'full'},
         {path: '**',redirectTo:'/bienvenida',pathMatch:'full'},
       ]

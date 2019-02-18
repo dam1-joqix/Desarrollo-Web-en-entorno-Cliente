@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-12 col-md-10 col-lg-8 col-xl-6 m-auto">
+    <div class="card text-center">
+      <div class="card-header bg-warning">
+        Edición del producto
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 m-auto">
+            <img *ngIf="producto" [src]="producto?.imagenUrl" style="max-width: 500px" class="w-100">
+          </div>
+        </div>
+        <div class="col-12">
+          <form *ngIf="producto" (submit)="guardar()" >
+            <div class="form-group row">
+              <label for="descripcion" class="col-sm-2 col-form-label">Descripción</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="descripcion" name="descripcion" value="{{producto.descripcion}}" [ngModel]="producto.descripcion" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="precio" class="col-sm-2 col-form-label">Precio</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="precio" name="precio" value="{{producto.precio}}" [ngModel]="producto.precio">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="puntuacion" class="col-sm-2 col-form-label">Puntuación</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="puntuacion" name="puntuacion" value="{{producto.puntuacion}}" [ngModel]="producto.puntuacion">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="disponibilidad" class="col-sm-2 col-form-label">Disponibilidad</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="disponibilidad" name="disponibilidad" value="{{producto.disponibilidad|date:'dd/MM/yyyy'}}" [ngModel] ="producto.disponibilidad | date:'yyyy-MM-dd'" (ngModelChange)="producto.disponibilidad = $event" >
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-warning" value="Guardar">
+          &nbsp;
+          <a  href="/productos/{{producto?.id}}" class="btn btn-primary" >Volver</a>
+        </div>
+      </div>
+      <div class="card-footer text-muted bg-warning">
+        Producto: {{producto?.id}}
+      </div>
+    </div>
+  </div>
+</div>
