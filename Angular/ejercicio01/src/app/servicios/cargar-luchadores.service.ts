@@ -13,4 +13,7 @@ export class CargarLuchadoresService {
   getLuchadores():Observable<ILuchador[]>{
     return this.http.get<ILuchador[]>(this.URLLuchadores)
   }
+  getLuchador(id:number):Observable<ILuchador>{
+    return this.http.get<ILuchador>(this.URLLuchadores+"/"+id);
+  }
 }

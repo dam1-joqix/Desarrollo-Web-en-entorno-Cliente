@@ -1,4 +1,5 @@
 export interface ILuchador {
+  id:number;
   nombre:string,
   retrato:string;
   animacion:string;

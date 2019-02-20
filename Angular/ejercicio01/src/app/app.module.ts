@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, Title} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -6,19 +6,33 @@ import { AreaSeleccionComponent } from './area-seleccion/area-seleccion.componen
 import { RetratoLuchadorComponent } from './retrato-luchador/retrato-luchador.component';
 import { AtributosLuchadorComponent } from './atributos-luchador/atributos-luchador.component';
 import {HttpClientModule} from "@angular/common/http";
+import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { AntesLucharComponent } from './antes-luchar/antes-luchar.component';
+import {RouterModule} from "@angular/router";
+import {ListarProductosComponent} from "../../../angular1/src/app/listar-productos/listar-productos.component";
+import {CargarLuchadoresService} from "./servicios/cargar-luchadores.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     AreaSeleccionComponent,
     RetratoLuchadorComponent,
-    AtributosLuchadorComponent
+    AtributosLuchadorComponent,
+    BienvenidaComponent,
+    AntesLucharComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path:'bienvenida',component:BienvenidaComponent},
+      {path:'seleccion',component:AreaSeleccionComponent},
+      {path:'antes-luchar/:id',component:AntesLucharComponent},
+      {path:'',redirectTo:'/bienvenida',pathMatch:'full'},
+      {path: '**',redirectTo:'/bienvenida',pathMatch:'full'},
+    ])
   ],
-  providers: [],
+  providers: [CargarLuchadoresService,Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

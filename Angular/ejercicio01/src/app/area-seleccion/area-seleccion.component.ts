@@ -28,20 +28,36 @@ export class AreaSeleccionComponent implements OnInit {
 
   @HostListener('window:keyup',['$event'])
   keyEvent(event: KeyboardEvent){
-    switch (event.keyCode) {
-      case KEY_CODE.DOWN_ARROW:
-        if(this.indiceSeleccionado!=-1){
-          let nuevoIndice=this.indiceSeleccionado+2;
-          if (!(nuevoIndice>3)){
+    let nuevoIndice:number;
+    if(this.indiceSeleccionado!=-1){
+      switch (event.keyCode) {
+        case KEY_CODE.DOWN_ARROW:
+            nuevoIndice=this.indiceSeleccionado+2;
+            if (!(nuevoIndice>3)){
+              this.indiceSeleccionado=nuevoIndice;
+            }
+
+          break;
+        case KEY_CODE.UP_ARROW:
+          nuevoIndice=this.indiceSeleccionado-2;
+          if(!(nuevoIndice<0)){
             this.indiceSeleccionado=nuevoIndice;
           }
-        }
-        break;
-      case KEY_CODE.UP_ARROW:
-        break;
+          break;
+        case KEY_CODE.LEFT_ARROW:
+          nuevoIndice=this.indiceSeleccionado-1;
+          if(!(nuevoIndice<0)){
+            this.indiceSeleccionado=nuevoIndice;
+          }
+          break;
+        case KEY_CODE.RIGTH_ARROW:
+          nuevoIndice=this.indiceSeleccionado+1;
+          if(!(nuevoIndice>3)){
+            this.indiceSeleccionado=nuevoIndice;
+          }
 
+      }
     }
-
   }
 
 

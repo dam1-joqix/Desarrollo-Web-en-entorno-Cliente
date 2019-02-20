@@ -1,8 +1,20 @@
 <div class="text-center col-md-12">
   <img src="../assets/img/logo.png" >
 </div>
-<main class="col-12 mt-5">
-    <area-seleccion></area-seleccion>
+<nav class="navbar navbar-expand-md navbar-collapse navbar-light mb-4 bg-secondary" >
+
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/bienvenida']" [routerLinkActive]="['active']">Bienvenida</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/seleccion']" [routerLinkActive]="['active']">Seleccion</a>
+    </li>
+  </ul>
+</nav>
+<main class="col-12 ">
+
+  <router-outlet></router-outlet>
 </main>
 
 

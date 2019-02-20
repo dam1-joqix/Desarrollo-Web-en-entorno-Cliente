@@ -1,0 +1,10 @@
+.contenido{
+  background-color: rgba(5,5,5,0.49);
+}
+.reverse{
+  transform: scaleX(-1);
+}
+.imagen{
+  max-height: 50vh;
+  width: 20vw;
+}

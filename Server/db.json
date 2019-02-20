@@ -2,19 +2,19 @@
   "productos": [
     {
       "id": 1,
-      "descripcion": "Disco Duro SSD",
-      "disponibilidad": "2012-04-23T18:25:43.511Z",
-      "precio": 75,
+      "descripcion": "SSD Kingston",
+      "disponibilidad": "2104-05-03",
+      "precio": 77,
       "imagenUrl": "assets/disco-duro.png",
-      "puntuacion": 3
+      "puntuacion": 4
     },
     {
       "id": 2,
-      "descripcion": "Placa Base",
-      "disponibilidad": "2013-06-11T18:25:43.511Z",
-      "precio": 100,
+      "descripcion": "Placa Base Gigabyte",
+      "disponibilidad": "2013-06-22",
+      "precio": 89,
       "imagenUrl": "assets/placa-base.jpg",
-      "puntuacion": 4
+      "puntuacion": 3
     }
   ],
   "luchadores": [

@@ -29,7 +29,7 @@ export class EditarDetallesProductoComponent implements OnInit {
     this.service.guardarProducto(this.producto).subscribe(
       p=>console.log(p),
       e=>console.log(e)
-    )
+    );
 
   }
 
