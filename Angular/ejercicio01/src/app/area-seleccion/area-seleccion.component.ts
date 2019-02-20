@@ -1,7 +1,7 @@
 import {Component, HostListener, OnInit, Output} from '@angular/core';
 import {ILuchador} from "../interfaces/iluchador";
 import {CargarLuchadoresService} from "../servicios/cargar-luchadores.service";
-import {DomSanitizer} from "@angular/platform-browser";
+import {DomSanitizer, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'area-seleccion',
@@ -10,7 +10,7 @@ import {DomSanitizer} from "@angular/platform-browser";
 })
 export class AreaSeleccionComponent implements OnInit {
 
-  constructor(private cargador:CargarLuchadoresService,private _sanitizer: DomSanitizer) { }
+  constructor(private cargador:CargarLuchadoresService,private _sanitizer: DomSanitizer,private titleServide:Title) { }
   luchadores:ILuchador[];
   indiceSeleccionado=-1;
 
@@ -20,7 +20,8 @@ export class AreaSeleccionComponent implements OnInit {
       arrayLuchadores=>this.luchadores=arrayLuchadores,
       error => console.log(error),
       ()=>console.log("finalizado")
-    )
+    );
+    this.titleServide.setTitle("Seleccion de luchador");
   }
   getAnimacion(){
     return  this._sanitizer.bypassSecurityTrustResourceUrl(this.luchadores[this.indiceSeleccionado].animacion);

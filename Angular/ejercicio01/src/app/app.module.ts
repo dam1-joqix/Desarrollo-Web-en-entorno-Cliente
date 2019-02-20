@@ -9,7 +9,6 @@ import {HttpClientModule} from "@angular/common/http";
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { AntesLucharComponent } from './antes-luchar/antes-luchar.component';
 import {RouterModule} from "@angular/router";
-import {ListarProductosComponent} from "../../../angular1/src/app/listar-productos/listar-productos.component";
 import {CargarLuchadoresService} from "./servicios/cargar-luchadores.service";
 
 @NgModule({
