@@ -16,6 +16,7 @@ import { DetallesProductoComponent } from './detalles-producto/detalles-producto
 import {RouterModule} from "@angular/router";
 import {DetallesProductoGuardaService} from "./servicios/detalles-producto-guarda.service";
 import { EditarDetallesProductoComponent } from './editar-detalles-producto/editar-detalles-producto.component';
+import {DetallesProductoResolveService} from "./servicios/detalles-producto-resolve.service";
 
 
 @NgModule({
@@ -40,8 +41,17 @@ import { EditarDetallesProductoComponent } from './editar-detalles-producto/edit
         {path:'productos',component:ListarProductosComponent},
         {path:'productos/:id',
           component:DetallesProductoComponent,
-        canActivate:[DetallesProductoGuardaService]},
-        {path:'productos/editar/:id',component:EditarDetallesProductoComponent,canActivate:[DetallesProductoGuardaService]},
+        canActivate:[DetallesProductoGuardaService],
+        resolve:{
+          producto:DetallesProductoResolveService
+        }},
+        {path:'productos/editar/:id',
+          component:EditarDetallesProductoComponent,
+          canActivate:[DetallesProductoGuardaService],
+          resolve:{
+            producto:DetallesProductoResolveService
+          }
+        },
         {path:'',redirectTo:'/bienvenida',pathMatch:'full'},
         {path: '**',redirectTo:'/bienvenida',pathMatch:'full'},
       ]

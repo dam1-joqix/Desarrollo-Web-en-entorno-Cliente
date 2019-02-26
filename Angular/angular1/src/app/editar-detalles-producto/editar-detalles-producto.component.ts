@@ -19,10 +19,7 @@ export class EditarDetallesProductoComponent implements OnInit {
   ngOnInit() {
     this.idProducto=this.route.snapshot.params['id'];
     this.titleServide.setTitle('Editar producto '+this.idProducto);
-    this.service.getProducto(this.idProducto).subscribe(
-      p=>this.producto=p,
-      error1 => console.log(error1)
-    );
+    this.producto=this.route.snapshot.data["producto"];
   }
   guardar(){
     console.log("guardar");

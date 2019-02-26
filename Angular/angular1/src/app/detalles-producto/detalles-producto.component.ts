@@ -13,17 +13,13 @@ export class DetallesProductoComponent implements OnInit {
   idProducto: number;
   producto:IProducto;
   constructor(private titleServide:Title,
-              private route: ActivatedRoute,
-              private service:CargaProductoService) { }
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
 
     this.idProducto=this.route.snapshot.params['id'];
     this.titleServide.setTitle('Detalles producto '+this.idProducto);
-    this.service.getProducto(this.idProducto).subscribe(
-      p=>this.producto=p,
-      error1 => console.log(error1)
-    );
+   this.producto=this.route.snapshot.data["producto"];
   }
 
 
